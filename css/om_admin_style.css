@@ -1,0 +1,287 @@
+/*****************************
+********Css for Table*********
+*****************************/	
+#om_table { 
+		width: 94%; 
+		border-collapse: collapse;}
+#om_table caption{
+text-align:center;
+width:94%; }	
+#om_table tr:nth-of-type(odd) { 
+		background: #eee;  }
+#om_table th { 
+		background: #333; 
+		color: white; 
+		font-weight: bold;  }
+#om_table td,#om_table th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left; }		
+		
+/*****************************
+********css for load image****
+*****************************/		
+.om_loading_admin{background-image:url(../images/om_load.GIF); width:32px; height:32px; float:left;}
+.om_loading_sending{ float:left; line-height:28px;}		
+		
+/***************************
+****css for button start****
+****************************/
+.om_reply_button{
+background-color:#333333;
+color:#FFFFFF;
+border:#333 1px solid;
+cursor:pointer;
+-webkit-transition: .6s ease;
+-moz-transition: .6s ease;
+-o-transition: .6s ease;
+-ms-transition: .6s ease;
+transition: .6s ease;
+}
+.om_reply_button:hover{
+background-color:#999999;
+color:#FFFFFF;
+-webkit-transition: .6s ease;
+-moz-transition: .6s ease;
+-o-transition: .6s ease;
+-ms-transition: .6s ease;
+transition: .6s ease;
+}
+/***************************
+****css for button end****
+****************************/
+
+
+/*********************************
+******Css for pagination start****
+**********************************/
+.om_paginate li {font-weight: bold;} 
+.om_paginate li .om_paginate_click {
+	display: block;
+	float: left;
+	color: #585858;
+	text-decoration: none;
+	padding: 6px 11px;
+	margin-right: 6px;
+	border-radius: 3px;
+	border: 1px solid #DDDDDD;
+	background-color: #CCCCCC;
+}
+.om_paginate li .om_paginate_click:hover {
+color: #000000; }
+
+.om_paginate li .om_active_page{
+background-color: #000000;
+border: 1px solid #000000;
+border-radius: 3px;
+color:#FFFFFF;	
+	}
+.om_paginate li .om_active_page:hover{
+	color:#CCCCCC;
+	}	
+	
+/*********************************
+******Css for pagination end******
+**********************************/	
+
+
+/*********************************
+******Css for pop up reply********
+**********************************/
+#om_message_Comtaner{position:fixed;width:100%;height:100%;top:0;left:0;background-image:url(../images/om_bg.png);	opacity:1;z-index:1000;display:none; overflow:scroll;}
+#om_show_message{width:40%;height:400px;margin-top:5%;margin-left:auto;margin-right:auto;background-color:#FFF;border-radius:4px;color:#333;padding:20px;
+max-width:422px;}
+#om_conatntError{ height:auto; display:block; float:left; width:100%;}	
+#om_cross{ float:right; color:#900; cursor:pointer; font-size:14px; margin-right:10px; margin-bottom:0px;}	
+#om_cross img{ width:20px;}
+
+
+/**********************************
+*******Css For error message*******
+***********************************/
+.om_error{
+padding:4px; 
+font-size:12px; 
+font-weight:200;
+color:#990000;
+}
+
+
+/**********************************
+*******Css For thank message*******
+***********************************/
+.om_thank_message{
+font-family:"Courier New", Courier, monospace;
+color:#999999; line-height:24px;
+font-size:24px;}
+
+
+/**************************************
+******Css for pop up reply form********
+**************************************/
+#om_conatnt_reply input{ 
+height:28px; 
+width:260px; 
+padding:1px 4px 1px 4px;}	
+#om_conatnt_reply label{ 
+font-family:"Courier New", Courier, monospace;
+width:140px; 
+float:left;}
+#om_conatnt_reply textarea{
+	height:140px; 
+	width:260px;
+	padding:8px;}
+#om_conatnt_reply input[type="button"]{
+	width:118px; 
+	padding:8px 4px;
+	cursor:pointer;
+	height:42px;}	
+#om_conatnt_reply input[type="reset"]{
+	width:118px; 
+	padding:8px 4px;
+	cursor:pointer;
+	height:42px;}	
+#om_conatnt_reply input[type="button"]{ color:#FFFFFF; background-color:#000000;background-image:none; border:#FFFFFF 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+#om_conatnt_reply input[type="reset"]{ color:#FFFFFF; background-color:#000000;background-image:none; border:#FFFFFF 1px solid;transition:.6s; font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}	
+#om_conatnt_reply input[type="button"]:hover{background-image:none;background-color:#CCCCCC;color:#333333;transition:.6s;}
+#om_conatnt_reply input[type="reset"]:hover{background-image:none;background-color:#CCCCCC;color:#333333;transition:.6s;}
+.om_clear{ clear:both;}
+.margin_twelve_top{margin-top:12px;}
+/*************************************
+*********Css for om setting page******
+**************************************/
+.om_form_import_as_csv{
+height:auto;margin-top:5%;margin-left:auto;margin-right:auto;background-color:#CCCCCC;border-radius:4px;color:#333333;padding:20px;max-width:422px;}
+.om_form_import_as_csv input{ 
+height:28px; 
+width:260px; 
+padding:1px 4px 1px 4px;}	
+.om_form_import_as_csv label{ 
+font-family:"Courier New", Courier, monospace;
+width:140px; 
+float:left;}	
+.om_form_import_as_csv input[type="submit"]{ 
+color:#FFFFFF; background-color:#000000;background-image:none; border:#CCCCCC 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;padding:4px 2px;cursor:pointer;height:32px;width:242px; border-radius:4px;}
+.om_form_import_as_csv input[type="reset"]{color:#FFFFFF; background-color:#000000;background-image:none; border:#CCCCCC 1px solid;transition:.6s; font-family:"Courier New", Courier, monospace;font-weight:200;font-size:12px;padding:4px 8px;cursor:pointer;height:32px;width:80px;border-radius:4px;}
+.om_form_import_as_csv input[type="submit"]:hover{background-image:none;background-color:#666666;color:#CCCCCC;transition:.6s;width:242px;border-radius:4px;}
+.om_form_import_as_csv input[type="reset"]:hover{background-image:none;background-color:#666666;color:#CCCCCC;transition:.6s;width:80px;border-radius:4px;}
+
+
+
+@media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px)  {
+		#om_table table, #om_table thead, #om_table tbody, #om_table th,#om_table td,#om_table tr { 
+		display: block; }
+		#om_table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;}
+		#om_table tr { 
+		border: 1px solid #ccc; }
+		#om_table td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; }		
+		#om_table td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap; }
+		/*
+		om table data lable
+		*/
+		#om_table td:nth-of-type(1):before { content: "No"; }
+		#om_table td:nth-of-type(2):before { content: "Name"; }
+		#om_table td:nth-of-type(3):before { content: "Email"; }
+		#om_table td:nth-of-type(4):before { content: "Phone"; }
+		#om_table td:nth-of-type(5):before { content: "Date"; }
+		#om_table td:nth-of-type(6):before { content: "Message"; }
+		#om_table td:nth-of-type(7):before { content: "No Of Reply"; }
+		#om_table td:nth-of-type(8):before { content: "Reply"; }
+	}
+	
+	
+	@media (min-width: 320px) and (max-width: 480px) {
+	table#om_table { 
+	padding: 0; 
+	margin: 0; 
+	width: 320px; }
+	#om_table caption{width: 320px;}
+	
+	#om_show_message{
+	padding:8px;
+	width:92%;}	
+	#om_conatnt_reply input{ 
+	height:28px; 
+	width:100%; 
+	padding:1px 4px 1px 4px;}
+	#om_conatnt_reply textarea{
+	height:140px; 
+	width:100%;
+	padding:8px;}
+   
+   .om_form_import_as_csv{
+	padding:8px;
+	width:92%;}	
+	.om_form_import_as_csv input{ 
+	height:28px; 
+	width:100%; 
+	padding:1px 4px 1px 4px;}
+	.om_form_import_as_csv input[type="reset"]{ padding:4px 2px; width:100%;}
+	.om_form_import_as_csv input[type="submit"]{padding:4px 2px; width:100%;}
+		}
+@media (max-width: 319px){
+	#om_show_message{
+	padding:8px;
+	width:92%;}	
+	#om_conatnt_reply input{ 
+	height:28px; 
+	width:100%; 
+	padding:1px 4px 1px 4px;}
+	#om_conatnt_reply textarea{
+	height:140px; 
+	width:100%;
+	padding:8px;}
+	#om_conatnt_reply input[type="reset"]{ padding:4px 2px; width:46%;}
+	#om_conatnt_reply input[type="button"]{padding:4px 2px; width:46%;}
+   
+   .om_form_import_as_csv{
+	padding:8px;
+	width:92%;}	
+	.om_form_import_as_csv input{ 
+	height:28px; 
+	width:100%; 
+	padding:1px 4px 1px 4px;}
+	.om_form_import_as_csv input[type="reset"]{ padding:4px 2px; width:100%;}
+	.om_form_import_as_csv input[type="submit"]{padding:4px 2px; width:100%;}
+	}		
+		
+@media screen and (max-width: 644px) and (min-width: 480px){
+	#om_conatnt_reply input{ 
+	height:28px; 
+	width:100%; 
+	padding:1px 4px 1px 4px;}
+	#om_conatnt_reply textarea{
+	height:140px; 
+	width:100%;
+	padding:8px;}
+	#om_conatnt_reply input[type="reset"]{ padding:4px 2px; width:46%;}
+	#om_conatnt_reply input[type="button"]{padding:4px 2px; width:46%;}
+	
+	
+	.om_form_import_as_csv{
+	padding:8px;
+	width:92%;}	
+	.om_form_import_as_csv input{ 
+	height:28px; 
+	width:100%; 
+	padding:1px 4px 1px 4px;}
+	}	
+	
+	
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		table#om_table{width:495px;}
+		#om_table caption{width:495px;}
+	}

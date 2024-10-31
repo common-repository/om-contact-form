@@ -1,0 +1,237 @@
+/* CSS Document */
+body{margin:0; padding:0;}
+#omMainContaner{
+	display:none;
+	background-image:url(../images/om_bg.png);
+	margin:0;
+	padding:1%;
+	position:fixed;
+	height:100%;
+	width:100%;
+	z-index:100000;
+	left:0;
+	top:0;
+	overflow:scroll;}
+#omInnerContainer{
+	overflow:hidden;
+	max-width:498px;
+	margin:8px auto 28px auto;
+	border-radius:2px;
+	padding:20px;}	
+.omClear{ clear:both;}
+.om_loading{background-image:url(../images/om_load.GIF); width:32px; height:32px;}
+/**********************************
+*******Css For error message*******
+***********************************/
+.om_error{
+padding:4px; 
+font-size:12px; 
+font-weight:200;}
+/**********************************
+*******Css For thank message*******
+***********************************/
+.om_thank_message{
+font-size:24px;}
+/*************************************
+*******Css For Contact Us Button******
+*************************************/
+#omContactUsCaller{
+font-family:"Courier New", Courier, monospace;
+font-weight:600;
+position:fixed; 
+left:-38px; 
+*left:-4px; /*It will apply to ie 7 and below */
+z-index:10000; 
+padding:8px; 
+cursor:pointer;
+transform: rotate(-90deg); 
+-ms-transform: rotate(-90deg); 
+-webkit-transform: rotate(-90deg); 
+-moz-transform:rotate(-90deg);
+-o-transform:rotate(-90deg);
+top:40%; box-shadow:#333333 0px 1px 2px 0px;}
+/********************
+*****css for form****
+********************/
+#omCloseButton{
+box-shadow:none;
+float:right;
+cursor:pointer;
+text-align: center;
+width: 20px;
+}
+#omCloseButton img{box-shadow:none;width: 20px;}
+#omHeading{
+font-family:"Courier New", Courier, monospace;
+margin:0px;
+text-align:center;
+font-weight:200; 
+font-size:24px;}	
+
+#omInnerContainer input{ 
+height:28px; 
+width:260px; 
+padding:1px 4px 1px 4px;}	
+#omInnerContainer label{ 
+font-family:"Courier New", Courier, monospace;
+width:140px; 
+float:left;}
+#omInnerContainer textarea{
+	height:140px; 
+	width:260px;
+	padding:8px;}
+#omInnerContainer input[type="button"]{
+	width:118px; 
+	padding:8px 4px;
+	cursor:pointer;
+	height:42px;}	
+#omInnerContainer input[type="reset"]{
+	width:118px; 
+	padding:8px 4px;
+	cursor:pointer;
+	height:42px;}	
+/***************************************
+******css for background color**********
+***************************************/
+
+/*black color start*/
+.omBlack{background-color:#3B3D3D; color:#FFFFFF;}
+  .omBlack .om_compalsari{ color:#FFFFFF;}	
+    .omBlack .om_error{ color:#F77B94; border:#F77B94 1px solid;}
+	.omBlack .omLable{ color:#FFFFFF;}
+     .omBlack input{border:#333333 1px solid;}	
+      .omBlack textarea{border:#333333 1px solid;}
+        .omBlack input[type="button"]{color:#FFFFFF; background-color:#000000;background-image:none; border:#666666 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+         .omBlack input[type="reset"]{color:#FFFFFF; background-color:#000000;background-image:none; border:#666666 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+           .omBlack input[type="button"]:hover{background-image:none;background-color:#333333;color:#CCCCCC;transition:.6s;}
+	        .omBlack input[type="reset"]:hover{background-image:none;background-color:#333333;color:#CCCCCC;transition:.6s;}		
+             .omBlack #omHeading{background-color:#666666; color:#FFFFFF; padding:10px; font-size:36px;}
+              .omBlack #omFormContaner{padding:20px; background-color:#333333; color:#FFFFFF;}		
+               .omBlack #omFormFooter{background-color:#666666; color:#FFFFFF; padding:10px; font-size:36px;}
+                 .omBlack .om_thank_message{color:#FFFFFF; font-family:"Courier New", Courier, monospace;}
+				  
+
+/*red color start*/
+.omRed{background-color:#D06F8C; color:#FFFFFF;}
+  .omRed .om_compalsari{ color:#FFFFFF;}
+   .omRed .om_error{ color:#6B082E;  border:#6B082E 1px solid;}
+   .omRed .omLable{ color:#FFFFFF;}
+    .omRed input{border:#D06F8C 1px solid;}	
+      .omRed textarea{border:#D06F8C 1px solid;}
+	   .omRed input[type="button"]{ color:#FFFFFF; background-color:#D06F8C;background-image:none; border:#5E0C23 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	    .omRed input[type="reset"]{ color:#FFFFFF; background-color:#D06F8C;background-image:none; border:#5E0C23 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	     .omRed input[type="button"]:hover{background-image:none;background-color:#AF1F56;color:#CCCCCC;transition:.6s;}
+	      .omRed input[type="reset"]:hover{background-image:none;background-color:#AF1F56;color:#CCCCCC;transition:.6s;}
+	        .omRed #omHeading{background-color:#5E0C23; color:#FFFFFF; padding:10px; font-size:36px;}
+		      .omRed #omFormContaner{ padding:20px; background-color:#AF1F56; color:#FFFFFF;}		
+		        .omRed #omFormFooter{background-color:#5E0C23; color:#FFFFFF; padding:10px; font-size:36px;}
+			     .omRed	.om_thank_message{ color:#FFFFFF; font-family:"Courier New", Courier, monospace;}
+
+/*blue color start*/
+.omBlue{background-color:#77CDFF; color:#000000;}
+  .omBlue .om_compalsari{ color:#FFFFFF;}
+   .omBlue .om_error{ color:#6D0924;  border:#CC0E40 1px solid;}
+   .omBlue .omLable{ color:#FFFFFF;}
+    .omBlue input{border:#3D95D3 1px solid;}	
+      .omBlue textarea{border:#3D95D3 1px solid;}
+	   .omBlue input[type="button"]{ color:#FFFFFF; background-color:#3D95D3;background-image:none; border:#0E4C82 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	    .omBlue input[type="reset"]{ color:#FFFFFF; background-color:#3D95D3;background-image:none; border:#0E4C82 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	     .omBlue input[type="button"]:hover{background-image:none;background-color:#77CDFF;color:#333333;transition:.6s;}
+	      .omBlue input[type="reset"]:hover{background-image:none;background-color:#77CDFF;color:#333333;transition:.6s;}
+	        .omBlue #omHeading{background-color:#0E4C82; color:#FFFFFF; padding:10px; font-size:36px;}
+		      .omBlue #omFormContaner{ padding:20px; background-color:#3D95D3; color:#FFFFFF;}		
+		        .omBlue #omFormFooter{background-color:#0E4C82; color:#FFFFFF; padding:10px; font-size:36px;}
+			     .omBlue .om_thank_message{ color:#333333; font-family:"Courier New", Courier, monospace;}
+				  
+				 				 
+/*green color start*/				 
+.omGreen{background-color:#98D18A; color:#333333;}
+  .omGreen .om_compalsari{ color:#FFFFFF;}
+   .omGreen .om_error{ color:#6D0924;  border:#CC0E40 1px solid;}
+   .omGreen .omLable{ color:#FFFFFF;}
+    .omGreen input{border:#6CA359 1px solid;}	
+      .omGreen textarea{border:#6CA359 1px solid;}
+	   .omGreen input[type="button"]{ color:#FFFFFF; background-color:#6CA359;background-image:none; border:#447C04 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	    .omGreen input[type="reset"]{ color:#FFFFFF; background-color:#6CA359;background-image:none; border:#447C04 1px solid;transition:.6s; font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	     .omGreen input[type="button"]:hover{background-image:none;background-color:#98D18A;color:#333333;transition:.6s;}
+	      .omGreen input[type="reset"]:hover{background-image:none;background-color:#98D18A;color:#333333;transition:.6s;}
+	        .omGreen #omHeading{background-color:#447C04; color:#FFFFFF; padding:10px; font-size:36px;}
+		      .omGreen #omFormContaner{ padding:20px; background-color:#6CA359; color:#FFFFFF;}		
+		        .omGreen #omFormFooter{background-color:#447C04; color:#FFFFFF; padding:10px; font-size:36px;}
+			     .omGreen .om_thank_message{ color:#333333; font-family:"Courier New", Courier, monospace;}	
+				  
+				 	
+/*yellow color start*/			
+.omYellow{background-color:#FADA80; color:#333333;}
+  .omYellow .om_compalsari{ color:#FFFFFF;}
+   .omYellow .om_error{ color:#6D0924;  border:#CC0E40 1px solid;}
+   .omYellow .omLable{ color:#FFFFFF;}
+    .omYellow input{border:#D6A042 1px solid;}	
+      .omYellow textarea{border:#D6A042 1px solid;}
+	   .omYellow input[type="button"]{ color:#FFFFFF; background-color:#E0A848;background-image:none; border:#A77718 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	    .omYellow input[type="reset"]{ color:#FFFFFF; background-color:#E0A848;background-image:none; border:#A77718 1px solid;transition:.6s; font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	     .omYellow input[type="button"]:hover{background-image:none;background-color:#FADA80;color:#333333;transition:.6s;}
+	      .omYellow input[type="reset"]:hover{background-image:none;background-color:#FADA80;color:#333333;transition:.6s;}
+	        .omYellow #omHeading{background-color:#A77718; color:#FFFFFF; padding:10px; font-size:36px;}
+		      .omYellow #omFormContaner{ padding:20px; background-color:#E0A848; color:#FFFFFF;}		
+		        .omYellow #omFormFooter{background-color:#A77718; color:#FFFFFF; padding:10px; font-size:36px;}
+			     .omYellow .om_thank_message{ color:#333333; font-family:"Courier New", Courier, monospace;}					 
+				  
+
+/*orange color start*/
+.omOrange{background-color:#F7AE79; color:#333333;}
+  .omOrange .om_compalsari{ color:#FFFFFF;}
+   .omOrange .om_error{ color:#6D0924;  border:#CC0E40 1px solid;}
+   .omOrange .omLable{ color:#FFFFFF;}
+    .omOrange input{border:#F58636 1px solid;}	
+      .omOrange textarea{border:#F58636 1px solid;}
+	   .omOrange input[type="button"]{ color:#FFFFFF; background-color:#F58636;background-image:none; border:#8D460D 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	    .omOrange input[type="reset"]{ color:#FFFFFF; background-color:#F58636;background-image:none; border:#8D460D 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200; font-size:12px;}
+	     .omOrange input[type="button"]:hover{background-image:none;background-color:#F7AE79;color:#333333;transition:.6s;}
+	      .omOrange input[type="reset"]:hover{background-image:none;background-color:#F7AE79;color:#333333;transition:.6s;}
+	        .omOrange #omHeading{background-color:#8D460D; color:#FFFFFF; padding:10px; font-size:36px;}
+		      .omOrange #omFormContaner{ padding:20px; background-color:#F58636; color:#FFFFFF;}		
+		        .omOrange #omFormFooter{background-color:#8D460D; color:#FFFFFF; padding:10px; font-size:36px;}
+			     .omOrange .om_thank_message{ color:#333333; font-family:"Courier New", Courier, monospace;}
+				
+				 				 		
+/*white color start*/
+.omWhite{background-color:#FFFFFF; color:#666666;}
+  .omWhite .om_compalsari{ color:#999999;}
+   .omWhite .om_error{ color:#6D0924;  border:#CC0E40 1px solid;}
+   .omWhite .omLable{ color:#333333;}
+    .omWhite input{border:#F6F3F1 1px solid;}	
+      .omWhite textarea{border:#F6F3F1 1px solid;}
+	   .omWhite input[type="button"]{ color:#666666; background-color:#F6F3F1;background-image:none; border:#CCCCCC 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	     .omWhite input[type="reset"]{ color:#666666; background-color:#F6F3F1;background-image:none; border:#CCCCCC 1px solid;transition:.6s; font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	      .omWhite input[type="button"]:hover{background-image:none;background-color:#FFFFFF;color:#333333;transition:.6s;}
+	        .omWhite input[type="reset"]:hover{background-image:none;background-color:#FFFFFF;color:#333333;transition:.6s;}
+	         .omWhite #omHeading{background-color:#CCCCCC; color:#333333; padding:10px; font-size:36px;}
+		      .omWhite #omFormContaner{ padding:20px; background-color:#F6F3F1; color:#666666;}		
+		        .omWhite #omFormFooter{background-color:#CCCCCC; color:#FFFFFF; padding:10px; font-size:36px;}
+			     .omWhite .om_thank_message{ color:#333333; font-family:"Courier New", Courier, monospace;}	
+				   
+
+/*pink color start*/
+.omPink{background-color:#F9B6FB; color:#333333;}
+  .omPink .om_compalsari{ color:#FFFFFF;}
+   .omPink .om_error{ color:#6D0924;  border:#F371A3 1px solid;}
+    .omPink .omLable{ color:#FFFFFF;}
+     .omPink input{border:#F371A3 1px solid;}	
+      .omPink textarea{border:#F6F3F1 1px solid;}
+	   .omPink input[type="button"]{ color:#FFFFFF; background-color:#F371A3;background-image:none; border:#873686 1px solid;transition:.6s;font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	     .omPink input[type="reset"]{ color:#FFFFFF; background-color:#F371A3;background-image:none; border:#873686 1px solid;transition:.6s; font-family:"Courier New", Courier, monospace; font-weight:200;font-size:12px;}
+	      .omPink input[type="button"]:hover{background-image:none;background-color:#F9B6FB;color:#333333;transition:.6s;}
+	        .omPink input[type="reset"]:hover{background-image:none;background-color:#F9B6FB;color:#333333;transition:.6s;}
+	         .omPink #omHeading{background-color:#873686; color:#FFFFFF; padding:10px; font-size:36px;}
+		      .omPink #omFormContaner{ padding:20px; background-color:#F371A3; color:#FFFFFF;}		
+		        .omPink #omFormFooter{background-color:#873686; color:#FFFFFF; padding:10px; font-size:36px;}
+			     .omPink .om_thank_message{ color:#333333; font-family:"Courier New", Courier, monospace;}
+				 		
+				 	
+	
+	
+@media screen and (max-width: 400px){
+#omInnerContainer input{ width:94%;}
+#omInnerContainer textarea{ width:94%;}
+}		
